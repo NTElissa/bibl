@@ -1,0 +1,8 @@
+<script>
+  // Allow fullscreen from any element (some browsers block it otherwise)
+  document.addEventListener('click', function() {
+    if (!document.fullscreenElement) {
+      document.documentElement.requestFullscreen?.();
+    }
+  }, { once: true });
+</script>
